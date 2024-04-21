@@ -3,7 +3,7 @@ class Solution:
     def palindrome(self, string):
         return string[::-1] == string
 
-    def lcm(self, string1, string2):
+    def lcs(self, string1, string2):
         n = len(string1)
         m = len(string2)
 
@@ -22,8 +22,8 @@ class Solution:
         # longest common sub seq
         if self.palindrome(string):
             return len(string)
-        # the answer is the lcm of the string and it's reverse.
-        return self.lcm(string, string[::-1])
+        # the answer is the lcs (Longest Common Subsequence) of the string, and it's reverse.
+        return self.lcs(string, string[::-1])
 
 
 sol = Solution()
