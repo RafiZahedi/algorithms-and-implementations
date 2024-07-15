@@ -1,21 +1,5 @@
 from collections import defaultdict as dd
-# test case             # Output -> 0 9 7 11 10 8 6 3 1 12 5 2 4
-# 11 15
-# 0 9
-# 0 7
-# 0 11
-# 9 10
-# 9 8
-# 7 6
-# 7 3
-# 7 11
-# 10 1
-# 8 1
-# 8 12
-# 12 2
-# 3 2
-# 3 4
-# 6 5
+
 v, e = map(int, input().split())
 Graph = dd(list)
 for i in range(e):
